@@ -1,33 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Kiskaa</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Kamu</title>
+
 <style>
 body {
-  background: black;
-  color: #00ffcc;
-  font-family: monospace;
+  background: #0f172a;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
   text-align: center;
-  margin-top: 20%;
+  padding: 20px;
+}
+
+.box {
+  max-width: 500px;
+  background: #111827;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255,0,100,0.3);
+}
+
+h2 {
+  color: #ff4d6d;
 }
 </style>
 </head>
-<body>
-<h2>Untuk Kamu</h2>
-<p id="text"></p>
 
-<script>
-const msg = "Aku ingin sekali menghapus kenangan burukmu bersama mantanmu yang sering kamu ceritan, maka izinkan aku membangun kenangan manis dan bahagia bersamaku <br> ingat tidak ada  yang tidak mungkin dibawah matahari ini";
-let i = 0;
-function type() {
-  if (i < msg.length) {
-    document.getElementById("text").innerHTML += msg.charAt(i);
-    i++;
-    setTimeout(type, 50);
-  }
-}
-type();
-</script>
+<body>
+<div class="box">
+  <h2>Happy Valentine Kisskaa</h2>
+  <p>
+    Aku ingin menghapus masa lalumu bersama mantanmu yang jauh dari kata bahagia dan, aku berharap di hari kasih sayang ini aku bisa memulai membangun kebahagian bersamamu.<br><br>
+    Aku berharap aku bisa selalu membuat kamu tersenyum, tertawa, dan bahagia.<br>
+    Aku bukan laki - laki yang sempurna, tapi dengan hadirnya dirimu di hidupku aku berharap kita bisa sempurna seutuhnya.<br>
+    Server memang menjadi tambok paling sulit di hubungan level 6+ kita ini, tapi percayalah<br>
+    "Tidak Ada Yang Tidak Mungkin Di Bawah Matahari Ini"<br>
+    Happy Valentine Kisska-ku<br>
+    I Love You So Much
+  </p>
+</div>
 </body>
 </html>
