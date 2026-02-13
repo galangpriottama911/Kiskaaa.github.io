@@ -6,29 +6,55 @@
 <title>Untuk Kamu</title>
 
 <style>
+/* ===== Global Reset ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Body Layout ===== */
 body {
   background: #0f172a;
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  margin: 0;
-  text-align: center;
-  padding: 20px;
+  padding: 1rem;
 }
 
+/* ===== Card Box ===== */
 .box {
-  max-width: 500px;
+  width: 100%;
+  max-width: 720px;
   background: #111827;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(255,0,100,0.3);
+  padding: clamp(1rem, 3vw, 2rem);
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 0, 120, 0.35);
+  text-align: center;
 }
 
+/* ===== Title ===== */
 h2 {
   color: #ff4d6d;
+  font-size: clamp(1.6rem, 4vw, 2.5rem);
+  margin-bottom: 1rem;
+}
+
+/* ===== Paragraph ===== */
+p {
+  font-size: clamp(1rem, 2.5vw, 1.15rem);
+  line-height: 1.7;
+  white-space: normal;
+}
+
+/* ===== Mobile Fine-Tuning ===== */
+@media (max-width: 480px) {
+  .box {
+    border-radius: 14px;
+  }
 }
 </style>
 </head>
@@ -37,12 +63,12 @@ h2 {
 <div class="box">
   <h2>Happy Valentine Kisskaa</h2>
   <p>
-    Aku ingin menghapus masa lalumu bersama mantanmu yang jauh dari kata bahagia dan, aku berharap di hari kasih sayang ini aku bisa memulai membangun kebahagian bersamamu.<br><br>
-    Aku berharap aku bisa selalu membuat kamu tersenyum, tertawa, dan bahagia.<br>
-    Aku bukan laki - laki yang sempurna, tapi dengan hadirnya dirimu di hidupku aku berharap kita bisa sempurna seutuhnya.<br>
-    Server memang menjadi tambok paling sulit di hubungan level 6+ kita ini, tapi percayalah<br>
-    "Tidak Ada Yang Tidak Mungkin Di Bawah Matahari Ini"<br>
-    Happy Valentine Kisska-ku<br>
+    Aku ingin menghapus masa lalumu bersama mantanmu yang jauh dari kata bahagia, dan aku berharap di hari kasih sayang ini aku bisa memulai membangun kebahagiaan bersamamu.<br><br>
+    Aku berharap aku bisa selalu membuat kamu tersenyum, tertawa, dan bahagia.<br><br>
+    Aku bukan laki-laki yang sempurna, tapi dengan hadirnya dirimu di hidupku aku berharap kita bisa sempurna seutuhnya.<br><br>
+    Server memang menjadi tembok paling sulit di hubungan level 6+ kita ini, tapi percayalah:<br>
+    <b>"Tidak Ada Yang Tidak Mungkin Di Bawah Matahari Ini"</b><br><br>
+    Happy Valentine Kisska-ku ❤️<br>
     I Love You So Much
   </p>
 </div>
