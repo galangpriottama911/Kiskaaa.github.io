@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kiskaa</title>
+<style>
+body {
+  background: black;
+  color: #00ffcc;
+  font-family: monospace;
+  text-align: center;
+  margin-top: 20%;
+}
+</style>
+</head>
+<body>
+<h2>Untuk Kamu</h2>
+<p id="text"></p>
+
+<script>
+const msg = "Aku ingin sekali menghapus kenangan burukmu bersama mantanmu yang sering kamu ceritan, maka izinkan aku membangun kenangan manis dan bahagia bersamaku <br> ingat tidak ada  yang tidak mungkin dibawah matahari ini";
+let i = 0;
+function type() {
+  if (i < msg.length) {
+    document.getElementById("text").innerHTML += msg.charAt(i);
+    i++;
+    setTimeout(type, 50);
+  }
+}
+type();
+</script>
+</body>
+</html>
